@@ -1,0 +1,19 @@
+import sys # for using 'unicode()' in 'sys' module
+
+
+#'val' is saving 'Input string' that is 'ascii' value
+#-- because In python 2.7.8, 'ASCII' is set default
+
+val = raw_input("Enter Strings ascii (that is set default python 2.7.8) :")
+
+result = unicode(val) # call function my_unicode()
+
+def my_unicode(val):
+    uni = unicode(val) # The part of Encoding ascii to unicode
+    return uni # return value = reuslt value
+    
+
+print result #printing result value
+print "Input string(kwon==ascii) --->>>", type(val) # Distinguish type using type()
+print "Output string(kwon==unicode) --->>>", type(result) # Distinguish type using type()
+
